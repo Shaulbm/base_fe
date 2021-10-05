@@ -6,17 +6,25 @@ import { AppComponent } from './app.component';
 import { DiscoveryProcessModule } from './discovery-process/discovery-process.module';
 import { PersonalViewModule } from './personal-view/personal-view.module';
 import { TeamViewModule } from './team-view/team-view.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DiscoveryProcessModule,
     PersonalViewModule,
-    TeamViewModule
+    TeamViewModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
