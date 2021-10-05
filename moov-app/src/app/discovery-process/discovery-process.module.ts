@@ -10,6 +10,9 @@ import { DiscoveryChatComponent } from './discovery-chat/discovery-chat.componen
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    DiscoveryChatComponent
   ]
 })
 export class DiscoveryProcessModule { }
