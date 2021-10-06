@@ -8,7 +8,7 @@ export interface PersonalUserData {
     status: string;
     currentIssue: string;
     trainingStage: string;
-    userAttributes: any;
-    courseLesson: string;
+    userAttributes: userAttributes: { [key: string]: string };;
+courseLesson: string;
 
 }
