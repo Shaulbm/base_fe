@@ -1,10 +1,10 @@
 //https://angular.io/guide/build#proxying-to-a-backend-server
 const PROXY_CONFIG = {
-  "/moov-server/*": {
+  "/api/*": {
     "secure": false,
     "logLevel": "debug",
     "changeOrigin": true,
-    "target": "http://localhost:8080",
+    "target": "http://localhost:8080/api",
     "pathRewrite": {
       "^/api": ""
     },

@@ -5,7 +5,7 @@ const useProxy = process.env.USE_PROXY;
 const moovEnv = process.env.MOOV_ENV;
 
 const targets = {
-  "remote":            "http://52.30.104.65/moov",
+  "remote":            "http://52.30.104.65/api",
 };
 
 const PROXY_CONFIG = {

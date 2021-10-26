@@ -3,10 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 import { IEnvironment } from './environment.interface';
-import {environment as baseEnvironment} from './environment.base';
 
 export const environment: IEnvironment = {
-  ...baseEnvironment,
+  hmr: false,
+  production: false,
+  version: 'jenkinsBuildNO',
 };
 
 /*

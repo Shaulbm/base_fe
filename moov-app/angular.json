@@ -58,6 +58,19 @@
               ],
               "outputHashing": "all"
             },
+            "hmr": {
+              "stylePreprocessorOptions": {
+                "includePaths": [
+                  "src/scss/local"
+                ]
+              },
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.hmr.ts"
+                }
+              ]
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -77,6 +90,27 @@
             },
             "development": {
               "browserTarget": "moov-app:build:development"
+            },
+            "mock": {
+              "hmr": true,
+              "browserTarget": "moov-app:build:hmr",
+              "proxyConfig": "src/proxy/proxy.conf.mock.js",
+              "host": "0.0.0.0",
+              "open": true
+            },
+            "local": {
+              "hmr": true,
+              "browserTarget": "moov-app:build:hmr",
+              "proxyConfig": "src/proxy/proxy.conf.local.js",
+              "host": "0.0.0.0",
+              "open": true
+            },
+            "remote": {
+              "hmr": true,
+              "browserTarget": "moov-app:build:hmr",
+              "proxyConfig": "src/proxy/proxy.conf.remote.js",
+              "host": "0.0.0.0",
+              "open": true
             }
           },
           "defaultConfiguration": "development"

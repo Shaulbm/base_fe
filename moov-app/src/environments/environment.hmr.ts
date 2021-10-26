@@ -3,11 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 import { IEnvironment } from './environment.interface';
-import {environment as baseEnvironment} from './environment.base';
+import { environment as baseEnvironment } from './environment.base';
 
 export const environment: IEnvironment = {
   ...baseEnvironment,
-};
+  hmr: true,
+  local_environment: {
+    displayName: 'Local',
+    type: 'localhost',
+  },
+} as IEnvironment;
 
 /*
  * For easier debugging in development mode, you can import the following file
