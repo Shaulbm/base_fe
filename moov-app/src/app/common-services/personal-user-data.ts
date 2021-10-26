@@ -1,3 +1,7 @@
+// interface UserAttributes: {
+//      [key: string]: {
+//       string }
+// }
 export interface PersonalUserData {
     id: string;
     name: string;
@@ -8,7 +12,7 @@ export interface PersonalUserData {
     status: string;
     currentIssue: string;
     trainingStage: string;
-    userAttributes: userAttributes: { [key: string]: string };;
-courseLesson: string;
+    motivations: { [key: string]: string };
+    courseLesson: string;
 
 }

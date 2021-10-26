@@ -1,2 +1,9 @@
 <p>my-motivations works!</p>
 
+    <span>Hello {{userFullName}}!</span>
+    <span> Here is your motivation list:</span>
+    <ul>
+        <li *ngFor="let motivation of myMotivations | keyvalue">
+            <span class="badge">{{motivation.key}}</span> {{motivation.value}}
+        </li>
+    </ul>

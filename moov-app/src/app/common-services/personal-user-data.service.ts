@@ -11,6 +11,6 @@ export class PersonalUserDataService {
 
   getUserDetails(userId: string): Observable<PersonalUserData> {
     console.log('trying to fetch...');
-    return this.http.get<PersonalUserData>(this.userDetailsUrl);
+    return this.http.get<PersonalUserData>(`${this.userDetailsUrl}/${userId}`);
   }
 }

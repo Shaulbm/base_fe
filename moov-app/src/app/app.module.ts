@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DiscoveryProcessModule } from './discovery-process/discovery-process.module';
+import { CommonServicesModule } from './common-services/common-services.module';
 import { PersonalViewModule } from './personal-view/personal-view.module';
 import { TeamViewModule } from './team-view/team-view.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,6 +20,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CommonServicesModule,
     DiscoveryProcessModule,
     PersonalViewModule,
     TeamViewModule,
